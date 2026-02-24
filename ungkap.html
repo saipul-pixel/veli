@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expression</title>
+<link rel="stylesheet" href="kultah.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- AWAN (MODE TERANG) -->
+<div class="cloud"></div>
+<div class="cloud" style="top:150px; animation-duration:80s;"></div>
+
+<header>
+    <h1>Expression 🌹</h1>
+
+    <div class="right-menu">
+        <span class="mode-btn" id="modeIcon" onclick="toggleMode()">🌙</span>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <nav id="menu">
+        <a href="index.html">Home</a>
+    </nav>
+</header><br><br>
+
+
+    <h3 class="birthday-text" style="text-align:center;">
+        HAPPY BIRTHDAY 🎉
+    </h3>
+
+    <!-- Confetti tidak mengganggu layout -->
+    <div class="confetti-container"></div>
+
+<!-- ===== KONTEN UTAMA ===== -->
+<main class="content">
+    <section class="about">
+        <div class="about-text">
+            <h2>Sayangku, Selamat ulang tahun! 🤗</h2><br>
+            <p>
+                Di hari istimewamu ini, dunia terasa lebih indah karena ada kamu.
+                Kamu bukan hanya kekasih, tapi juga rumah tempatku pulang.
+                Terima kasih sudah menjadi alasan aku tersenyum setiap hari dan membuat hidupku penuh warna.
+                Aku berdoa semoga di usiamu yang baru ini, kamu selalu diberi kesehatan, kebahagiaan,
+                dan semua harapanmu terkabul.
+            </p><br>
+            <p>
+                Setiap tawa, setiap kenangan, dan setiap tantangan yang kita lewati telah membentuk kisah cinta yang begitu berharga.
+                Aku bersyukur atas semua momen kecil dan besar yang kita bagi, dan aku berharap kita terus tumbuh, saling menguatkan,
+                serta menciptakan lebih banyak kenangan indah di masa depan.
+            </p><br>
+            <p>
+                Semoga di usiamu yang baru ini, kamu selalu dikelilingi kebahagiaan, kesehatan, 
+                dan cinta yang tulus. Aku berjanji akan terus mencintaimu, mendukungmu, dan berjalan di sampingmu—hari ini, esok, dan selamanya.
+            </p><br>
+            <p>
+                Selamat yaa ay, makasih banyak udah nemenin aku sejauh ini.
+                Teruslah bersabar ya sama orang yang belum ada apa-apanya ini hehe 💕
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="poto/bunga.jpg" alt="gambar">
+        </div>
+    </section>
+
+    <div class="cards age-calc">
+        <div class="card">
+            <h2><b>25 February 2006</b></h2>
+        </div>
+
+        <div class="mid-text">To</div>
+
+        <div class="card">
+            <h2><b>25 February 2026</b></h2>
+        </div>
+
+        <div class="mid-text">=</div>
+
+        <div class="card">
+            <h2><b>20 Tahun</b></h2>
+        </div>
+    </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© <i>25 Febuary <span id="year"></span></i> Happy Birthday, <b>Velly</b> 💖</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="kultah.js"></script>
+</body>
+</html>

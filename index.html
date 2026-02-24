@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tampilan Depan</title>
+<link rel="stylesheet" href="kultah.css">
+</head>
+
+<body>
+
+<!-- AWAN (MODE TERANG) -->
+<div class="cloud"></div>
+<div class="cloud" style="top:150px; animation-duration:80s;"></div>
+
+<header>
+    <h1>Happy Birthday 🎂</h1>
+
+    <div class="right-menu">
+        <span class="mode-btn" id="modeIcon" onclick="toggleMode()">🌙</span>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <nav id="menu">
+        <a href="home.html">Home</a>
+    </nav>
+</header>
+
+<!-- ===== KONTEN UTAMA ===== -->
+<main class="content">
+
+    <div class="cards">
+        <a href="story.html" class="card-link">
+            <div class="card">
+                <h2>STORY</h2>
+            </div>
+        </a>
+
+        <a href="album.html" class="card-link">
+             <div class="card">
+                <h2>ALBUMS</h2>
+            </div>
+        </a>
+    </div>
+
+    <div class="cards">
+        <a href="ungkap.html" class="card-link">
+            <div class="card">
+                <h2>EXPRESSION</h2>
+            </div>
+        </a>
+
+        <a href="tambah.html" class="card-link">
+            <div class="card">
+                 <h2>BONUS</h2>
+            </div>
+        </a>
+    </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© <i>25 Febuary <span id="year"></span></i> Happy Birthday, <b>Velly</b> 💖</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<div class="love-container"></div>
+<script>
+const loveContainer = document.querySelector(".love-container");
+
+function createLove() {
+    if (!loveContainer) return;
+
+    const love = document.createElement("div");
+    love.className = "floating-love";
+    love.textContent = "❤️";
+
+    love.style.left = Math.random() * 100 + "vw";
+    love.style.fontSize = (Math.random() * 15 + 15) + "px";
+    love.style.animationDuration = (Math.random() * 4 + 4) + "s";
+
+    loveContainer.appendChild(love);
+
+    setTimeout(() => {
+        love.remove();
+    }, 8000);
+}
+
+/* Love muncul terus */
+setInterval(createLove, 800);
+</script>
+
+<script src="kultah.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story</title>
+<link rel="stylesheet" href="kultah.css">
+</head>
+
+<body>
+
+<!-- AWAN (MODE TERANG) -->
+<div class="cloud"></div>
+<div class="cloud" style="top:150px; animation-duration:80s;"></div>
+
+<header>
+    <h1>Story 🌸</h1>
+
+    <div class="right-menu">
+        <span class="mode-btn" id="modeIcon" onclick="toggleMode()">🌙</span>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <nav id="menu">
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<main class="content story-content">
+
+    <!-- SLIDER STORY -->
+    <section class="story-slider">
+        <div class="slides">
+            <img src="poto/ay1.jpeg" class="slide active">
+            <img src="poto/ay2.png" class="slide">
+            <img src="poto/ay3.jpeg" class="slide">
+            <img src="poto/ay4.jpeg" class="slide">
+            <img src="poto/ay5.jpeg" class="slide">
+        </div>
+
+        <p class="hint">👉 Sentuh ini ay di mode siang</p>
+    </section>
+
+<!-- HADIAH -->
+<section class="gift-section">
+    <div class="gift-box" onclick="openGift()">
+        🎁
+    </div>
+
+    <div class="gift-content hidden">
+        <img src="https://img1.picmix.com/output/stamp/normal/8/5/1/6/1456158_cf70a.gif" alt="gift photo">
+        <p>
+            Ini hadiah kecil dari aku 💖  
+            Terima kasih sudah menjadi bagian terindah dalam hidupku.
+            Semoga kita selalu bersama dan saling mencintai. <br>
+            <b>#askiri</b>
+        </p>
+    </div>
+
+    <!-- MUSIK -->
+    <audio id="giftMusic" src="aaa.mp3"></audio>
+
+    <!-- EFEK PETASAN & LOVE -->
+    <div class="effect-container"></div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© <i>25 Febuary <span id="year"></span></i> Happy Birthday, <b>Velly</b> 💖</p>
+</footer>
+
+<div class="love-container"></div>
+<script>
+const loveContainer = document.querySelector(".love-container");
+
+function createLove() {
+    if (!loveContainer) return;
+
+    const love = document.createElement("div");
+    love.className = "floating-love";
+    love.textContent = "💗";
+
+    love.style.left = Math.random() * 100 + "vw";
+    love.style.fontSize = (Math.random() * 15 + 15) + "px";
+    love.style.animationDuration = (Math.random() * 4 + 4) + "s";
+
+    loveContainer.appendChild(love);
+
+    setTimeout(() => {
+        love.remove();
+    }, 8000);
+}
+
+/* Love muncul terus */
+setInterval(createLove, 800);
+</script>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="kultah.js"></script>
+</body>
+</html>

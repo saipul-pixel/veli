@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story</title>
+<link rel="stylesheet" href="kultah.css">
+</head>
+
+<body>
+
+<!-- AWAN (MODE TERANG) -->
+<div class="cloud"></div>
+<div class="cloud" style="top:150px; animation-duration:80s;"></div>
+
+<header>
+    <h1>Albums ✨</h1>
+
+    <div class="right-menu">
+        <span class="mode-btn" id="modeIcon" onclick="toggleMode()">🌙</span>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <nav id="menu">
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<main class="content album-content">
+
+    <!-- PEMBUKA -->
+    <section class="album-header">
+        <h2>Our Love Story 💗</h2>
+        <p>Sebuah perjalanan kecil tentang kita dan cinta yang tumbuh perlahan.</p>
+        <p style="font-size: 10px;">Ay bacanya sambil nyalain musik yang ada ditombol kanan bawah yaa....</p>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="love-timeline">
+        <h3>Our Journey 🌸</h3>
+
+        <div class="timeline-item">
+            <span>2006</span>
+            <p>Hari di mana kamu lahir, membawa pesan yang indah</p>
+        </div>
+
+        <div class="timeline-item">
+            <span>2023</span>
+            <p>Dimana kita saling melihat dengan jarak yang jauh tapi dekat</p>
+        </div>
+
+        <div class="timeline-item">
+            <span>2024</span>
+            <p>Tahun ini dimulainya kita saling berkomunikasi dan bertukar cerita</p>
+        </div>
+
+        <div class="timeline-item">
+            <span>2025</span>
+            <p>Mengusahakan rencana yang telah kita buat, hingga terwujud dan pertamakalinya melihat dan memandang dirimu di suatu tempat</p>
+        </div>
+
+        <div class="timeline-item">
+            <span>2026</span>
+            <p>Ulang tahunmu yang kedua kalinya dirayakan aku dengan cinta dan doa 💖</p>
+        </div>
+    </section>
+
+    <!-- SLIDESHOW -->
+    <section class="album-slider">
+        <img src="poto/kita3.jpeg" class="album-slide active">
+    </section>
+
+    <p class="album-note">
+        Setiap detik bersamamu adalah cerita yang ingin kuingat selamanya ✨
+    </p>
+
+    <!-- GALERI -->
+    <section class="album-grid">
+
+        <figure class="album-item">
+            <img src="https://i.pinimg.com/originals/b1/4c/2e/b14c2e4fccc78f1bfbe64cb572b11892.jpg" onclick="openLightbox(this.src)">
+            <figcaption>Hari pertama yang membuatku yakin tentang kamu 💕</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://i.pinimg.com/236x/48/54/2c/48542c12f1b2ad37e242a5fd97d4660f.jpg" onclick="openLightbox(this.src)">
+            <figcaption>Senyummu selalu jadi tempat ternyamanku 🌷</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://stickershop.line-scdn.net/stickershop/v1/product/15380172/LINEStorePC/main.png?v=1" onclick="openLightbox(this.src)">
+            <figcaption>Kenangan sederhana yang terasa begitu istimewa ✨</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://i.pinimg.com/474x/4b/c8/aa/4bc8aa3e197623fb5b77a45eae1e49b1.jpg" onclick="openLightbox(this.src)">
+            <figcaption>Bersamamu, dunia terasa lebih hangat 💖</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://i.pinimg.com/originals/9e/32/29/9e32299449c0fcb7ae15c96f0222518c.png" onclick="openLightbox(this.src)">
+            <figcaption>Doaku selalu menyebut namamu 🌙</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://play-lh.googleusercontent.com/LrtegM-yEAwn-ulk-zcG0WJlteeLomY6mUKSBDx5YleuBFhlsB3UVwxJiisHOh5JSnny" onclick="openLightbox(this.src)">
+            <figcaption>Cinta ini sederhana, tapi tulus dan nyata 🤍</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBqBbVrQNcwz340t_EvoOvBPsy4WLUzEqVA&s" onclick="openLightbox(this.src)">
+            <figcaption>Aku memilihmu. Dan aku akan memilihmu lagi, lagi dan lagi. Tanpa henti, tanpa ragu🤍</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://stickerly.pstatic.net/sticker_pack/BtrYdItTyVIjilNTkcXSQA/9AWUKT/2/f8af5573-f0ba-49b3-9013-f731c9cc5f89.png" onclick="openLightbox(this.src)">
+            <figcaption>Hidupku terasa lengkap dan indah karena kehadiranmu di dalamnya</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://i.pinimg.com/736x/5b/a4/25/5ba4250691797b609edcdb304620eccb.jpg" onclick="openLightbox(this.src)">
+            <figcaption>Walaupun jarak membuatku merindukanmu, tapi itu membuat cintaku tumbuh lebih dalam</figcaption>
+        </figure>
+
+        <figure class="album-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1oRcyyaUlsvwectcQ-Z-LgySZgKAnBka4dA&s" onclick="openLightbox(this.src)">
+            <figcaption>Sejauh apapun jarak kita tetap kamu tujuannya</figcaption>
+        </figure>
+
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="album-quote">
+        <p>
+            “Bukan tentang seberapa lama kita bersama,  
+            tapi bagaimana kita saling menjaga dan mencintai setiap hari.” 💞
+        </p>
+    </section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox hidden" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<!-- MUSIK -->
+<audio id="albumMusic" src="aa.mp3" loop preload="auto"></audio>
+<button class="music-btn" id="musicBtn">🎵</button>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© <i>25 Febuary <span id="year"></span></i> Happy Birthday, <b>Velly</b> 💖</p>
+</footer>
+
+<div class="love-container"></div>
+<script>
+const loveContainer = document.querySelector(".love-container");
+
+function createLove() {
+    if (!loveContainer) return;
+
+    const love = document.createElement("div");
+    love.className = "floating-love";
+    love.textContent = "💗";
+
+    love.style.left = Math.random() * 100 + "vw";
+    love.style.fontSize = (Math.random() * 15 + 15) + "px";
+    love.style.animationDuration = (Math.random() * 4 + 4) + "s";
+
+    loveContainer.appendChild(love);
+
+    setTimeout(() => {
+        love.remove();
+    }, 8000);
+}
+
+/* Love muncul terus */
+setInterval(createLove, 800);
+</script>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="kultah.js"></script>
+</body>
+</html>
